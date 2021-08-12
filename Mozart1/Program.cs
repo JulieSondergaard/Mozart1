@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Media;
 
 namespace Mozart1
 {
@@ -39,13 +40,13 @@ namespace Mozart1
 
             for (int i = 0; i < 16; i++)
             {
-                int diceRoll = random.Next(1, 7) + random.Next(1, 7);
+                int diceRoll = random.Next(1, 7) + random.Next(1, 7) - 2;
                 soundFiles[i] = @"C:\Users\JulieSøndergaard-Hil\Documents\Skole\rar\Wave\Wave\M" + minuet[diceRoll, i] + ".wav";
             }
 
             for (int i = 0; i < 16; i++)
             {
-                int diceRoll = random.Next(1, 7);
+                int diceRoll = random.Next(1, 7) - 1;
                 soundFiles[i] = @"C:\Users\JulieSøndergaard-Hil\Documents\Skole\rar\Wave\Wave\T" + trio[diceRoll, i] + ".wav";
             }
 
